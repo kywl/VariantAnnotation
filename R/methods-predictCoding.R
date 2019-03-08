@@ -91,7 +91,7 @@ setMethod("predictCoding", c("VRanges", "TxDb", "ANY", "missing"),
 }
 
 .predictCodingGRangesList <- function(query, cdsbytx, seqSource, varAllele, 
-                                      ..., genetic.code=GENETIC_CODE,
+                                      ..., genetic.code=Biostrings::GENETIC_CODE,
                                       if.fuzzy.codon="error", 
                                       ignore.strand=FALSE)
 {
